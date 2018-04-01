@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fdfdfd"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="Plan Details"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/defaultcompany"
+        android:id="@+id/companyimg_customdialog"/>
+    <EditText
+        android:id="@+id/etcompany"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Company Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etplanid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Plan ID"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etplandetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Plan Detail"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/etcustomercare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Customer Care"
+        android:inputType="number" />
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_marginTop="9dp"
+    android:orientation="horizontal"
+    android:id="@+id/type"
+    android:layout_height="wrap_content">
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/cellur_btn"
+        android:textSize="20sp"
+        android:text="CELLULAR"/>
+
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:id="@+id/broadband_btn"
+        android:textSize="20sp"
+        android:text="BROADBAND"/>
+
+
+</RadioGroup>
+
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorAccent"
+        android:text="ADD"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
